@@ -7,7 +7,7 @@ const PlayerList = props => {
     console.log('PlayerList Props: ', props)
     return (
         <div>
-
+            <button onClick={() => props.fetchPlayers()}>Fetch Players</button>
         </div>
     )
 } 

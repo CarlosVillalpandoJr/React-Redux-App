@@ -5,12 +5,12 @@ export const FETCH_PLAYERS_FAILED = 'FETCH_PLAYERS_FAILED';
 
 export const playersLoading = () => ({ type: FETCH_PLAYERS_LOADING })
 
-export const playersLoadSuccess = () => ({ 
+export const playersLoadSuccess = (data) => ({ 
     type: FETCH_PLAYERS_SUCCESS, 
     payload: data
 })
 
-export const playersLoadFailure = () => ({ 
+export const playersLoadFailure = (error) => ({ 
     type: FETCH_PLAYERS_FAILED, 
     payload: error 
 })
