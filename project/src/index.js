@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { applyMiddleWare, createStore } from 'redux';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
+import reducer from './reducers/reducers'
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
