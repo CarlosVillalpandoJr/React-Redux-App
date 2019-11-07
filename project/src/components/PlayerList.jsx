@@ -8,6 +8,14 @@ const PlayerList = props => {
     return (
         <div>
             <button onClick={() => props.fetchPlayers()}>Fetch Players</button>
+            {props.playerData.map(player => {
+                return (
+                    <div className='player-card' key={player.id}>
+                        <h3>{player.first_name} {player.last_name}</h3>
+                        <p>{player.team.full_name}</p>
+                    </div>
+                )
+            })}
         </div>
     )
 } 
